@@ -1,8 +1,8 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
+```
+Name : Sandeep V
+Roll no :212223040179
+```
 
 
 
@@ -77,29 +77,113 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+## Addition of 8 bit ALP 
+```
+org 100h
 
+MOV AX,1122h
+MOV BX,3344h
+ADD AX,BX
+MOV [6000h],AX
+ret
+```
 
 
 ## Output  
- 
-## Subtraction   of 8 bit numbers  ALP 
- 
+ ![image](https://github.com/user-attachments/assets/ba103aba-f172-497f-918b-a9d44d1d52a2)
+
+## Subtraction of 8 bit numbers  ALP
+```
+org 100h
+MOV AX,[5000h]
+MOV BX,[5002h]
+SUB AX,BX  
+MOV [6010h],AX
+ret
+```
 ## Output  
-## Multiplication alp 
- ## Output  
+![image](https://github.com/user-attachments/assets/9b6e4983-34ef-4890-9727-ef7841db7171)
 
-
-## Division alp 
-
+## Multiplication of 8 bit numbers  ALP
+```
+org 100h
+MOV BX,4444h
+MOV AX,BX
+MOV CX,3333h
+MOV DX,CX
+MUL DX
+MOV [6020h],AX
+ret
+```
 ## Output  
+![image](https://github.com/user-attachments/assets/fd49bb9d-ca66-463f-83f4-2a9e6e4635a2)
 
+
+## Division of 8 bit numbers  ALP
+```
+org 100h              
+MOV AX,702H
+MOV BL,10H
+DIV BL 
+MOV [6030h],AL
+HLT
+ret
+```
+## Output  
+![image](https://github.com/user-attachments/assets/0f067307-eb4c-48bb-ae80-37ed44668289)
+
+## Programs For Logical Operation
+## AND Operation of 8 bit ALP
+```
+org 100h
+
+MOV AX,125Bh
+MOV BX,6F67h
+AND AX,BX
+MOV [6000h],CX
+ret
+```
+## Output:
+![image](https://github.com/user-attachments/assets/63c09a5d-ba61-4595-85de-88f99e6572cd)
+
+## OR Operation of 8 bit ALP
+```
+org 100h
+
+MOV AX,[5000h]
+MOV BX,[5002h]
+OR AX,BX  
+MOV [6010h],AX
+ret
+```
+## Output:
+![image](https://github.com/user-attachments/assets/46525010-b313-403f-8e50-56f15aa70052)
+
+## NOT Operation of 8 bit ALP
+```
+org 100h
+MOV BX,4444h
+NOT BX
+MOV [6020h],AX
+ret
+```
+## Output:
+![image](https://github.com/user-attachments/assets/e4ba9493-303d-4a14-978f-b7f126ecff79)
+
+## XOR Operation of 8 bit ALP
+```
+org 100h          
+MOV AX,702H
+MOV BL,10H
+XOR [6030h],AL
+HLT
+ret
+```
+## Output
+![image](https://github.com/user-attachments/assets/f3cd500a-f023-4988-a94d-339763a6f15d)
 
 ## Result :
- 
-
-
-
+Hence,The logiacl opertaion and arithmetic operation has been executed successfully.
 
 
 
